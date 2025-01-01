@@ -1,0 +1,13 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% load static %}  <!-- Add this line to load static files -->
+{% block title %}Home - My Website{% endblock %}
+
+{% block content %}
+    <div id="home-content">
+        <h1>Welcome to the Home Page</h1>
+        <p>This is the homepage of my website.</p>
+    </div>
+    <script src="{% static 'js/home.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,76 @@
+crochectology/
+├── crochectology/         # Main Django project folder
+│   ├── settings.py        # Project settings
+│   ├── urls.py            # Project-wide URL configuration
+│   ├── wsgi.py            # WSGI entry point
+│   └── asgi.py            # ASGI entry point
+├── static/                # Static files (CSS, JS, images)
+│   ├── css/               # All CSS files
+│   │   └── main.css      # Main stylesheet
+|   |   |__product.css
+│   ├── js/                # All JavaScript files
+│   │   └── main.js      # Main JavaScript file
+|   |   |__cart.js
+│   └── images/            # All static images
+├── templates/             # HTML templates
+|   ├── includes/            # Reusable HTML snippets
+│   |   ├── navbar.html      # Navigation bar
+│   |   ├── footer.html      # Footer
+│   |   └── modals.html      # Modal dialogs
+|   ├── products/            # Templates specific to products app
+│   |    ├── product_list.html
+│   |    ├── product_detail.html
+|   ├── orders/
+│   |    ├── cart.html
+│   |    ├── checkout.html
+|   └── users/
+|   |    ├── login.html
+|   |    ├── register.html
+│   ├── accessories.html   
+│   ├── bag.html
+│   ├── bouquet.html
+│   ├── collegeproject.html
+│   ├── customization.html
+│   ├── details.html
+│   ├── faq.html
+│   ├── hair.html
+│   ├── keyring.html
+│   ├── profile.html
+│   ├── project.html
+│   ├── winter.html
+│   └── base.html          # Base template for reusable layout
+├── manage.py              # Django management script
+├── db.sqlite3             # Database file (SQLite)
+├── apps/                  # Custom apps for modularity
+│   ├── products/          # App for managing products
+│   │   ├── migrations/    # Database migrations
+│   │   ├── templates/     # Templates specific to the app
+│   │   │   └── products/  # Product-related templates
+│   │   ├── admin.py       # Admin panel customization
+│   │   ├── models.py      # Product database models
+│   │   ├── views.py       # Views for handling requests
+│   │   ├── urls.py        # URLs specific to products
+│   │   ├── forms.py       # Forms for product creation/updating
+│   │   └── tests.py       # Test cases
+│   ├── users/             # App for user authentication and profile management
+│   │   ├── migrations/
+│   │   ├── templates/
+│   │   │   └── users/
+│   │   ├── admin.py
+│   │   ├── models.py
+│   │   ├── views.py
+│   │   ├── urls.py
+│   │   ├── forms.py
+│   │   └── tests.py
+│   ├── orders/            # App for order and cart management
+│   │   ├── migrations/
+│   │   ├── templates/
+│   │   │   └── orders/
+│   │   ├── admin.py
+│   │   ├── models.py
+│   │   ├── views.py
+│   │   ├── urls.py
+│   │   ├── forms.py
+│   │   └── tests.py
+└── README.md              # Project documentation
+├── env/                   # Python virtual environment
