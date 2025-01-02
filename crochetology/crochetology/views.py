@@ -1,4 +1,4 @@
-# In your views.py (could be in the 'crochectology' app or another app like 'home')
+# In your views.py (could be in the 'crochetology' app or another app like 'home')
 from django.shortcuts import render
 
 def home(request):

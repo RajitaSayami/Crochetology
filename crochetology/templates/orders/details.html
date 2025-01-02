@@ -1,9 +1,9 @@
+{% load static %} 
 {% extends "base.html" %}
 {% block title %} Product details {% endblock %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/details.css' %}">
 {% endblock %}
-
 {% block content %}
 <div class="container">
     <img src="{% static 'images/rose-removebg-preview.png' %}"  alt="product" id="product-img" >
