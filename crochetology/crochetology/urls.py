@@ -17,6 +17,8 @@ Including another URLconf
 # In crochectology/urls.py
 from django.contrib import admin
 from django.urls import path, include
+
+from apps.products.views import bouquet
 from . import views  # Import your views
 
 urlpatterns = [
@@ -27,4 +29,18 @@ urlpatterns = [
     path('', views.home, name='home'),  # Add this line to handle the root URL
     path('', views.faq, name='faq'),
     path('about/', views.faq, name='faq'),
+    path('products/', views.products, name='products'),# Main products pag
+    path('bag/', views.products_bag, name='product-bag'),
+    path('bouquet/', views.products_bouquet, name='product-bouquet'),  # Bouquet category
+    path('winter/', views.products_winter, name='product-winter'),  # Winter essentials
+    path('keyring/', views.products_keyring, name='product-keyring'),  # Key rings
+    path('hair/', views.products_hair, name='product-hair'),  # Hair accessories
+    path('accessories/', views.products_accessories, name='product-accessories'),  # Accessories
+    path('orders/details/', views.orders_details, name='details'),
+    path('orders/customization/', views.orders_customization, name='customization'),  # Customization page
+    path('orders/cart/', views.orders_cart,name='cart'),
+    path('users/profile', views.users_profile, name='profile'),
+    path('users/password', views.users_password, name='password'),
+    path('users/register', views.users_register, name='register'),
 ]
+    

@@ -4,7 +4,7 @@ def products(request):
     return render(request, 'products.html')  # Create a corresponding template
 
 def bouquet(request):
-    return render(request, 'bouquet.html')
+    return render(request, 'products/bouquet.html')
 
 def winter(request):
     return render(request, 'winter.html')
