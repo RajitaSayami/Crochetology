@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block title %} Winter Essentials {% endblock %}
+{% load static %}
+
+{% block content %}
+<fieldset>
+    <h2> <p id="winter"><b>Winter Essentials:</b></p></h2>  <br>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/patchwork.png' %}" class="card-img-top" alt="Patchwork Cardigan">
+                    <div class="card-body">
+                        <h5 class="card-title">Patchwork Cardigan</h5>
+                        <p class="card-text"><b>NRP: Rs.5000</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/folklore-removebg-preview.png' %}" class="card-img-top" alt="Folklore Cardigan">
+                    <div class="card-body">
+                        <h5 class="card-title">Folklore Cardigan</h5>
+                        <p class="card-text"><b>NRP: Rs.5000</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/vest.png' %}" class="card-img-top" alt="Black and White vest">
+                    <div class="card-body">
+                        <h5 class="card-title">Black and White vest</h5>
+                        <p class="card-text"><b>NRP: Rs.1500</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+<hr><br><br>
+<fieldset>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/beanie-removebg-preview.png' %}" class="card-img-top" alt="Beanie">
+                    <div class="card-body">
+                        <h5 class="card-title">Beanie</h5>
+                        <p class="card-text"><b>NRP: Rs.800</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/muffler-removebg-preview.png' %}" class="card-img-top" alt="Muffler">
+                    <div class="card-body">
+                        <h5 class="card-title">Muffler</h5>
+                        <p class="card-text"><b>NRP: Rs.1500</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/balacava.png' %}" class="card-img-top" alt="Black and White Balacava">
+                    <div class="card-body">
+                        <h5 class="card-title">Black and White Balacava</h5>
+                        <p class="card-text"><b>NRP: Rs.1000</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+<hr><br><br>
+<fieldset>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/grannyvest.png' %}" class="card-img-top" alt="Granny Square Vest">
+                    <div class="card-body">
+                        <h5 class="card-title">Granny Square Vest</h5>
+                        <p class="card-text"><b>NRP: Rs.3000</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/leg warmer (1).png' %}" class="card-img-top" alt="Leg Warmer">
+                    <div class="card-body">
+                        <h5 class="card-title">Leg Warmer</h5>
+                        <p class="card-text"><b>NRP: Rs.700</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/scrap sweater.png' %}" class="card-img-top" alt="Scrappy Sweater">
+                    <div class="card-body">
+                        <h5 class="card-title">Scrappy Sweater</h5>
+                        <p class="card-text"><b>NRP: Rs.4500</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+{% endblock %}

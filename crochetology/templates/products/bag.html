@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %} Bags{% endblock %}
+{% load static %}
+
+{% block content %}
+<fieldset>
+    <p id="bags">
+        <h2><b>Bags and Purse:</b></h2><br>
+    </p>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/bag (2).png' %}" class="card-img-top" alt="bag">
+                    <div class="card-body">
+                        <h5 class="card-title">Granny Square Bag</h5>
+                        <p class="card-text"><b>NRP: Rs.1500</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/pouch.png' %}" class="card-img-top" alt="bag">
+                    <div class="card-body">
+                        <h5 class="card-title">Tulip Pouch</h5>
+                        <p class="card-text"><b>NRP: Rs.650</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/purse-removebg-preview.png' %}" class="card-img-top" alt="bag">
+                    <div class="card-body">
+                        <h5 class="card-title">Coquette Purse</h5>
+                        <p class="card-text"><b>NRP: Rs.300</b></p>
+                        <a href="{% url 'details' %}" target="_blank" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+<hr>
+{% endblock %}

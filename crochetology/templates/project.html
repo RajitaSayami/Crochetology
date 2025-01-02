@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+{% block title %} CROCHETOLOGY {% endblock %}
+{% load static %}
+
+{% block content %}
+			
+	<div id="about">
+			<p id="home"> </p>
+				<div class="container text-center">
+					<div class="row">
+						<div class="col">
+							<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="{% static 'images/muffler-removebg-preview.png' %}" class="d-block w-100" alt="lilyboq">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/rose-removebg-preview.png' %}" class="d-block w-100" alt="muffler">
+									</div>
+									<div class="carousel-item">
+										<img src="{% static 'images/starrysun-removebg-preview.png' %}" class="d-block w-100" alt="starrysun">
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div> 
+						<div class="col">  
+							<fieldset><p id="about">
+								<b> <h1>About Us: </h1> </b></p> 
+								<p> <h5>At Crochetology, we create durable, yarn-based products that offer a sustainable alternative to fast fashion. Our unique customization options allow you to add a personal touch, making each item truly your own. Crafted to last, our products foster a deeper connection, encouraging long-term use. Welcome to Crochetology—where sustainability, creativity, and customization come together.</h5></p>
+						</fieldset> </div>
+						<hr> <br> 
+					</div>
+				</div> 
+		<div class="col" id="products">
+			<div id="carouselExampleFade" class="carousel slide carousel-fade">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="{% static 'images/roselavender-removebg-preview.png' %}" class="d-block w-100" alt=".">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/sunflower-removebg-preview.png' %}" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="{% static 'images/purse-removebg-preview.png' %}" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="col">  
+		<div class="container text-center">
+			<div class="row">
+				<div class="col" id="product">
+					<p><b><i><h2>Product customization:</h2></i></b></p>
+					<p><h5>We offer fully customizable products tailored to your needs and preferences. Simply let us know your preferred color and size, and we’ll create something just for you! Please note that the cost of the product may vary depending on the level of customization.</h5></p>
+					<p><b><i><h2>Payment Terms:</h2></i></b></p>
+					<p><h5>To begin the customization process, we require a 50% upfront payment. Please note that this deposit is non-refundable.</h5></p>
+				</div>
+			</div>
+		</div>
+		<hr> <br> <br> 
+	</div>
+	<div class="container text-center">
+	<h2><p id="bouquet"><b>Products:</b></p></h2> <br>
+	<div class="container text-center">
+	</div>
+	<div class="row">
+	<div class="col">
+	<div class="card" style="width: 18rem;">
+		<img src="{% static 'images/rose-removebg-preview.png' %}" class="card-img-top" alt="rose">
+		<div class="card-body">
+			<h5 class="card-title">Glittery Rose Bouquet</h5>
+			<p class="card-text">
+			<b>NRP:Rs.1500 </b>
+			</p>
+			<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+		</div>
+	</div> 
+	</div>
+	<div class="col">
+		<div class="card" style="width: 18rem;">
+			<img src="{% static 'images/roselavender-removebg-preview.png' %}" class="card-img-top" alt="coaster">
+			<div class="card-body">
+				<h5 class="card-title">Rose Lavender Bouquet</h5>
+				<p class="card-text">
+					<b> NRP: Rs.350 </b>
+				</p>
+				<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		<div class="card" style="width: 18rem;">
+				<img src="{% static 'images/lilyboq-removebg-preview.png' %}" class="card-img-top" alt="rose">
+				<div class="card-body">
+					<h5 class="card-title">Lily bouquet </h5>
+					<p class="card-text">
+						<b>NRP:Rs.1200 </b>
+					</p>
+					<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+				</div>
+		</div>
+	</div> 
+	<hr> <br> <br>
+	<fieldset>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+					<img src="{% static 'images/patchwork.png' %}" class="card-img-top" alt="Cardigan">
+					<div class="card-body">
+						<h5 class="card-title">Patchwork Cardigan</h5>
+						<p class="card-text"><b> NRP:Rs.5000 </b></p>
+						<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+					<img src="{% static 'images/beanie-removebg-preview.png' %}" class="card-img-top" alt="Cardigan">
+					<div class="card-body">
+						<h5 class="card-title">Beanie</h5>
+						<p class="card-text"><b> NRP:Rs.800 </b></p>
+						<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+						<img src="{% static 'images/muffler-removebg-preview.png' %}" class="card-img-top" alt="cardigan">
+						<div class="card-body">
+							<h5 class="card-title">Muffler</h5>
+							<p class="card-text"><b> NRP:Rs.1500 </b> </p>
+							<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+						</div>
+					</div>
+			</div> 
+		</div> 
+	</div>
+	</fieldset>
+						<hr><br><br>
+	<fieldset>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="{% static 'images/sunflowerkeychain-removebg-preview.png' %}" class="card-img-top" alt="bag">
+						<div class="card-body">
+							<h5 class="card-title">Sunflower keychain</h5>
+							<p class="card-text"><b>NRP:Rs.150</b></p>
+							<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="{% static 'images/sunearth.png' %}" class="card-img-top" alt="bag">
+						<div class="card-body">
+							<h5 class="card-title">Sun and Earth couple Keyring</h5>
+							<p class="card-text"><b>NRP:Rs.400</b></p>
+							<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="{% static 'images/jellyfish (1).png' %}" class="card-img-top" alt="bag">
+						<div class="card-body">
+							<h5 class="card-title">Jellyfish Bagcharm</h5>
+							<p class="card-text"><b>NRP:Rs.350</b></p>
+							<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</fieldset>
+	<hr> <br><br>
+	<fieldset>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+							<img src="{% static 'images/bag (2).png' %}" class="card-img-top" alt="bag">
+							<div class="card-body">
+								<h5 class="card-title">Granny Square Bag</h5>
+								<p class="card-text"><b>NRP:Rs.1500</b></p>
+								<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+							</div>
+						</div>
+				</div>
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+						<img src="{% static 'images/pouch.png' %}" class="card-img-top" alt="bag">
+						<div class="card-body">
+							<h5 class="card-title">Tulip Pouch</h5>
+							<p class="card-text"><b>NRP:Rs.650</b></p>
+							<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+						</div>
+					</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+					<img src="{% static 'images/purse-removebg-preview.png' %}" class="card-img-top" alt="bag">
+						<div class="card-body">
+							<h5 class="card-title">Coquette Purse</h5>
+							<p class="card-text"><b>NRP:Rs.300</b></p>
+							<a href="details.html" target="_blank" class="btn btn-primary">View Details</a>
+						</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</fieldset>
+	<hr><br><br> 
+	
+
+{% endblock%}

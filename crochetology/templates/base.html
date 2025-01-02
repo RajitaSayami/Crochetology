@@ -1,0 +1,31 @@
+{% comment %} <!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/project.css' %}">
+</head>
+<body>
+    
+
+    {% block content %}
+    <!-- Default content will go here -->
+    {% endblock %}
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html> {% endcomment %}
+<!-- Header -->
+{% include 'includes/navbar.html' %}
+<!-- Main Content -->
+    <main>
+        {% block content %}
+        <!-- Content from child templates will go here -->
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    {% include 'includes/footer.html' %}

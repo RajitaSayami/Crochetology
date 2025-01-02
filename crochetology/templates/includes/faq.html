@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}FAQs{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/faq.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="item">
+        <div class="question">What is Crochetology?</div>
+        <div class="answer">
+            <p>Crochetology is an e-commerce platform that offers durable, yarn-based alternatives to fast fashion, promoting long-lasting, personalized items.</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="question">How do I place an order?</div>
+        <div class="answer">
+            <p>Browse our collection, select your preferred items, and add them to your cart. Proceed to checkout and follow the steps to complete your order.</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="question">What payment methods do you accept?</div>
+        <div class="answer">
+            <p>We accept payments via esewa, khalti, ime pay or any bank transfer to make your shopping experience convenient and secure.</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="question">Can I customize my order?</div>
+        <div class="answer">
+            <p>Yes! We encourage personalization. At Crochetology, we make personalization easy! Simply browse through our products and click the customization option next to the search bar. You’ll then be prompted to fill out a form where you can choose your preferred product, select the color you want, and add any additional details in the personal note box to make it truly yours.</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="question">What is your refund policy?</div>
+        <div class="answer">
+            <p>We require a non-refundable advance of 25% - 50% of your total purchase, which will be applied to your final balance. This advance helps ensure that orders aren't canceled once production has begun.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            const answer = item.querySelector('.answer');
+            const isActive = item.classList.toggle('active');
+            
+            // Toggle the visibility of the answer
+            if (isActive) {
+                answer.style.display = 'block';
+                question.setAttribute('aria-expanded', 'true');
+            } else {
+                answer.style.display = 'none';
+                question.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+</script>
+
+{% endblock %}
