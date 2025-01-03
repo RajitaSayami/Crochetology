@@ -37,7 +37,7 @@ urlpatterns = [
     path('orders/details/', views.orders_details, name='details'),
     path('orders/customization/', views.orders_customization, name='customization'),  # Customization page
     path('orders/cart/', views.orders_cart,name='cart'),
-    path('users/profile', views.users_profile, name='profile'),
+    path('users/login', views.users_login, name='login'),
     path('users/password', views.users_password, name='password'),
     path('users/register', views.users_register, name='register'),
 ]

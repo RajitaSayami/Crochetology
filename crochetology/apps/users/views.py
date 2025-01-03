@@ -6,8 +6,8 @@ from django.shortcuts import render
 def password(request):
     return render(request, 'users/password.html')
 
-def profile(request):
-    return render(request, 'users/profile.html')
+def login(request):
+    return render(request, 'users/login.html')
 
 
 def register(request):
