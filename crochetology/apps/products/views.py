@@ -7,19 +7,19 @@ def bouquet(request):
     return render(request, 'products/bouquet.html')
 
 def winter(request):
-    return render(request, 'winter.html')
+    return render(request, 'products/winter.html')
 
 def keyring(request):
-    return render(request, 'keyring.html')
+    return render(request, 'products/keyring.html')
 
 def hair(request):
-    return render(request, 'hair.html')
+    return render(request, 'products/hair.html')
 
 def accessories(request):
-    return render(request, 'accessories.html')
+    return render(request, 'products/accessories.html')
 
 def bag(request):
-    return render(request, 'bag.html')
+    return render(request, 'products/bag.html')
 
 def contact(request):
     return render(request, 'footer.html')  # Contact page

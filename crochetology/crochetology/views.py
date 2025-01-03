@@ -1,5 +1,7 @@
 # In your views.py (could be in the 'crochetology' app or another app like 'home')
 from django.shortcuts import render
+def home(request):
+    return render(request, 'base.html')
 
 def products(request):
     return render(request, 'products.html')  # Create a corresponding template
@@ -44,9 +46,6 @@ def users_profile(request):
 def users_register(request):
     return render(request, 'users/register.html')
 
-
-def home(request):
-    return render(request, 'base.html')
 
 def faq(request):
     return render(request, 'faq.html')

@@ -4,6 +4,6 @@ from django.shortcuts import render
 def customization(request):
     return render(request, 'orders/customization.html')
 def cart(request):
-    return render(request, 'cart.html')
+    return render(request, 'orders/cart.html')
 def details(request):
-    return render(request, 'detail.html')
+    return render(request, 'orders/detail.html')
