@@ -16,10 +16,15 @@ Including another URLconf
 """
 # In crochectology/urls.py
 from django.contrib import admin
+from django.conf import settings
 from django.urls import path, include
-from crochetology import views
+from crochetology import settings, views
+from django.conf.urls.static import static
 
+
+ 
 urlpatterns = [
+   
     path('admin/', admin.site.urls),
     path('products/', include('apps.products.urls')),
     path('users/', include('apps.users.urls')),
@@ -40,5 +45,5 @@ urlpatterns = [
     path('users/login', views.users_login, name='login'),
     path('users/password', views.users_password, name='password'),
     path('users/register', views.users_register, name='register'),
-]
+]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     

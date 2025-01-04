@@ -2,9 +2,11 @@
 {% extends "base.html" %} 
 {% load static %} 
 {% block title %} customization {% endblock%}
+ 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/customization.css' %}">
 {% endblock %}
+
 
 
 {% block content%}
@@ -91,24 +93,16 @@
             <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
         </div>
     </div>
-    
-
     <script>
-        
+    const cartUrl = "{% url 'cart' %}";
+    function addToCart() {
+        const size = document.getElementById('sizeSelect').value;
+        const message = document.getElementById('messageInput').value;
 
-function changeColor(color) {
-    const productImage = document.getElementById('productImage');
-    productImage.style.borderColor = color;  // Example color effect on image
-}
-
-function addToCart() {
-    const size = document.getElementById('sizeSelect').value;
-    const message = document.getElementById('messageInput').value;
-
-    alert(`Added to cart:\nSize: ${size}\nMessage: ${message}`);
-}
-
-    </script>
+        alert(`Added to cart:\nSize: ${size}\nMessage: ${message}`);
+        window.location.href = cartUrl;
+    }
+</script>
     
 
 {% endblock%}

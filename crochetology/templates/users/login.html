@@ -4,6 +4,7 @@
 
 {% block content %}
   <body>
+    <script src="{% static 'js/login.js' %}"></script>
     <!--Signup form-->
     <div class="wrapper" id="signup" style="display: none">
       <h1 class="form-title">Register</h1>
@@ -46,7 +47,8 @@
           <label
             ><input type="checkbox" name="check" id="check" />Agree to terms & condtions</label
           >
-        </div>
+        </div>  <form action="{% url 'login' %}" method="post" id="login-form">
+            {% csrf_token %}
         <button type="submit" class="btn">Signup</button>
         <div class="register-link">
           <p>Already Have Account? <a href="#" onclick="toggleForms()">Login</a></p>
@@ -57,7 +59,7 @@
     <!--Login form-->
     <div class="wrapper" id="login">
       <h1 class="form-title">Login</h1>
-      <form action="http://localhost:3000/login" method="post" id="login-form">
+    
         <span><i class='bx bx-x' onclick="closeForm()"></i></span>
         <div class="input-box">
           <input
